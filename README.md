@@ -19,7 +19,8 @@ sudo a2enmod cgi
 sudo cp /etc/apache2/mods-available/cgi.load /etc/apache2/mods-enabled/
 
 # from a windows pc that has Wonderware ITME installed copy the remote agent files from PC to removable drive:
-copy "C:\Program Files (x86)\Wonderware\InTouch Machine Edition v8.1\Redist\IoTView\Linux\arm-gnueabihf-2.13-6.0.17\*.*" "d:\iotview\*.*"
+copy "C:\Program Files (x86)\Wonderware\InTouch Machine Edition v8.1\Redist\IoTView\Linux\arm-gnueabihf-2.13-6.0.17\*.*"
+"d:\iotview\*.*"
 
 # now on raspberry create a directory and copy those:
 md /home/pi/iotview
@@ -44,13 +45,14 @@ sudo service remote-agent start
   151  nano /var/www/MA/sma/config.js
   152  sudo nano /var/www/MA/sma/config.js
 
-
+  
 If you already have a raspberry pi (2, 3 or maybe even a zero - I haven't tried IoTView with the slower processor in pizerow) then you can skip buying the pi stuff otherwise you may look at parts such as these:
 Raspberry Pi Complete:
 http://a.co/gGVRZKB
 You can run any MQTT Broker (mosquitto, node-red, or perhaps others)
 
-On a PC install the Wonderware ITME Development environment (demo mode available from your Wonderware guy or downloadable from wdn.wonderware.com with a support account).
+On a PC install the Wonderware ITME Development environment (demo mode available from your Wonderware guy or downloadable from
+wdn.wonderware.com with a support account).
 We use it to create the HMI and download it to the pi.
 
 To skip the pi and use just the PC you can install an mqtt broker on your PC (again, either mosquitto or several others are available for PC) and use it with Wonderware InTouch or ITME or System Platform.
@@ -58,7 +60,7 @@ To skip the pi and use just the PC you can install an mqtt broker on your PC (ag
 The WonderDevicESP8266 Sensor:
 We went with an ESP8266 12E microcontroller (also known as NodeMCU), 2 temperature probes and an ultrasonic distance sensor.
 
-These are  programmed with the arduino IDE - which can be installed on either a PC or your Raspberry PI.
+These are programmed with the arduino IDE - which can be installed on either a PC or your Raspberry PI.
 If you use Arduino  on pi, don't use the standard installation (sudo apt-get install arudino) because that is an old version that doesn't support other boards like the ESP8266. Instead install via:
 # on pi in Chromium browser navigate to https://www.arduino.cc/en/Main/Software and download for linux arm
 # extract in place by right clicking using:
@@ -69,7 +71,8 @@ cd /opt/arduino-1.8.5
 ./install.sh
 
 # now you need to add esp8266/nodemcu support to arduino ide
-# run arduino (Start>Programming>Arduino) and menu: edit > preferences ...paste the following in "Additional Boards Manager": http://arduino.esp8266.com/stable/package_esp8266com_index.json
+# run arduino (Start>Programming>Arduino) and menu: edit > preferences ...paste the following in "Additional Boards Manager":
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
 # restart arduino ide and Tools > Board > Boards Manager and "Install" esp8266
 # >Sketch>Include Libraries>Manage Libraries ... add:
 #   PubSubClient from Nick O'Leary
@@ -93,7 +96,7 @@ Anything you have already laying around (like a MicroUSB cable, USB Power, wires
 If you are patient with shipping then you can find this stuff cheaper (sometimes MUCH CHEAPER) at https://www.aliexpress.com/
 
 A wiring diagram (the PNG file) can be found here too:
- https://github.com/jtmoderate876/WonderDeviceESP8266
+  https://github.com/jtmoderate876/WonderDeviceESP8266
 
 Misc. supplies such as screw driver, wire cutter, hot glue gun, soldering iron and solder (the temperature probes have flimsy wires that can't be pressed into the breadboard so we cut some of those Dupont wires and soldered them to it), band-aids :), etc.
 
