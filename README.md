@@ -81,7 +81,7 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 # restart arduino ide and Tools > Board > Boards Manager and "Install" esp8266
 # >Sketch>Include Libraries>Manage Libraries ... add:
 #   PubSubClient from Nick O'Leary
-#   OneWire
+#   OneWire by  Jim Studt, etc.
 #   DallasTemperature by Miles Burton, etc.
 #   WifiManager by Tzapu
 #   ArduinoJson by Benoit Blanchon
