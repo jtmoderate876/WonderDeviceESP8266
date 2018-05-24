@@ -11,17 +11,11 @@ sudo apt-get install apache2
 #sudo systemctl restart apache2
 sudo systemctl start apache2
 sudo systemctl enable apache2
-
 #skip the old service way which still works:
-
 #sudo service apache2 start
-
 #sudo service apache2 restart
-
 #enable cgi
-
 sudo a2enmod cgi
-
 sudo cp /etc/apache2/mods-available/cgi.load /etc/apache2/mods-enabled/
 ```
 
@@ -80,7 +74,6 @@ cd /home/pi/Downloads/arduino-1.8.5
 sudo mv /home/pi/Downloads/arduino-1.8.5 /opt/arduino-1.8.5
 cd /opt/arduino-1.8.5
 ./install.sh
-
 
 # now you need to add esp8266/nodemcu support to arduino ide
 # run arduino (Start>Programming>Arduino) and menu: edit > preferences ...paste the following in "Additional Boards Manager":
