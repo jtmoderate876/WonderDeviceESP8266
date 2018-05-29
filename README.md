@@ -1,6 +1,10 @@
 # WonderDeviceESP8266
 
 
+The device can be reset using #   DoubleResetDetect by Jens-Christian Skibakk
+
+You can then configure via wifimanager by connecting to the ESPXXXXXX device and setting your SSID/PWD/ETC.
+
 Raspberry pi's set up for Wonderware ITME "IoTView" per the following:
 
 ```
