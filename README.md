@@ -65,6 +65,9 @@ We use it to create the HMI and download it to the pi.
 To skip the pi and use just the PC you can install an mqtt broker on your PC (again, either mosquitto or several others are available for PC) and use it with Wonderware InTouch or ITME or System Platform.
 
 The WonderDevicESP8266 Sensor:
+![Wiring up WonderDeviceESP8266.](https://github.com/jtmoderate876/WonderDeviceESP8266/blob/master/WonderDeviceESP8266.PNG)
+
+
 We went with an ESP8266 12E microcontroller (also known as NodeMCU), 2 temperature probes and an ultrasonic distance sensor.
 
 These are programmed with the arduino IDE - which can be installed on either a PC or your Raspberry PI.
@@ -90,6 +93,7 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 #   WifiManager by Tzapu
 #   ArduinoJson by Benoit Blanchon
 #   DoubleResetDetect by Jens-Christian Skibakk
+#   
 ```
 
 The untrasonic sensor is called HC-SR04 BUT...
