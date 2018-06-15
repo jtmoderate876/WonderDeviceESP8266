@@ -117,3 +117,5 @@ A wiring diagram (the PNG file) can be found here too:
 
 Misc. supplies such as screw driver, wire cutter, hot glue gun, soldering iron and solder (the temperature probes have flimsy wires that can't be pressed into the breadboard so we cut some of those Dupont wires and soldered them to it), band-aids :), etc.
 
+For the time being I have a raspberry pi image with a sample application on the desktop for v8.1+ Wonderware InTouch Machine Edition IoTView / InduSoft WebStudio IoTView (pi/raspberry):
+https://1drv.ms/f/s!AvJzcfwnK1a3g61JaO3n66KUUUTJbw
